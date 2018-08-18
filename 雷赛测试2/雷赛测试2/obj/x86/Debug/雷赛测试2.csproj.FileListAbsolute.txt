@@ -7,3 +7,10 @@ C:\Users\12c311\Desktop\淇彬\雷赛测试2\雷赛测试2\obj\x86\Debug\雷赛�
 C:\Users\12c311\Desktop\淇彬\雷赛测试2\雷赛测试2\obj\x86\Debug\雷赛测试2.pdb
 D:\gitTUT\-1\雷赛测试2\雷赛测试2\obj\x86\Debug\雷赛测试2.exe
 D:\gitTUT\-1\雷赛测试2\雷赛测试2\obj\x86\Debug\雷赛测试2.pdb
+D:\gitTUT\-1\雷赛测试2\雷赛测试2\bin\Debug\雷赛测试2.exe
+D:\gitTUT\-1\雷赛测试2\雷赛测试2\bin\Debug\雷赛测试2.pdb
+D:\gitTUT\-1\雷赛测试2\雷赛测试2\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\gitTUT\-1\雷赛测试2\雷赛测试2\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+D:\gitTUT\-1\雷赛测试2\雷赛测试2\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\gitTUT\-1\雷赛测试2\雷赛测试2\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\gitTUT\-1\雷赛测试2\雷赛测试2\obj\x86\Debug\GenerateResource.write.1.tlog

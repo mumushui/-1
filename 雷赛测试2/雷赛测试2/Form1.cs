@@ -17,7 +17,7 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
-        
+        UInt16 CardNo, axis;
         private void Form1_Load(object sender, EventArgs e)
         {
             LTDMC.dmc_board_init();
@@ -46,7 +46,7 @@ namespace WindowsFormsApplication1
 
         private void set_alm_Click_1(object sender, EventArgs e)//设置alm信号的有效电平为高电平
         {
-            UInt16 CardNo, axis, enable, alm_logic, alm_action;
+            UInt16 enable, alm_logic, alm_action;
             for (UInt16 i = 0; i < 4; i++)
             {
                 CardNo = 0;
@@ -59,8 +59,13 @@ namespace WindowsFormsApplication1
             }
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            short sevon = LTDMC.dmc_read_sevon_pin(CardNo, axis);
+            MessageBox.Show(Convert.ToString(sevon, 10).ToUpper());
 
+
+        }
         
     }
 }
