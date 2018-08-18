@@ -12,11 +12,12 @@ namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
         }
-        Int16 i;
+        
         private void Form1_Load(object sender, EventArgs e)
         {
             LTDMC.dmc_board_init();
@@ -28,7 +29,7 @@ namespace WindowsFormsApplication1
             LTDMC.dmc_board_close();
 
         }
-
+        
         private void start_Click(object sender, EventArgs e)
         {
             LTDMC.dmc_set_profile(0, 0, 500, 5000, 0.01, 0.01, 500);
@@ -42,5 +43,24 @@ namespace WindowsFormsApplication1
             LTDMC.dmc_stop(0, 0, 0);
 
         }
+
+        private void set_alm_Click_1(object sender, EventArgs e)//设置alm信号的有效电平为高电平
+        {
+            UInt16 CardNo, axis, enable, alm_logic, alm_action;
+            for (UInt16 i = 0; i < 4; i++)
+            {
+                CardNo = 0;
+                axis = i;
+                enable = 1;
+                alm_logic = 1;
+                alm_action = 0;
+                LTDMC.dmc_axis_io_status(0, i);
+                LTDMC.dmc_set_alm_mode(CardNo, axis, enable, alm_logic, alm_action);
+            }
+        }
+
+        
+
+        
     }
 }
